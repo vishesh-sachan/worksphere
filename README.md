@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/home/saket/Desktop/worksphere/images/whitelogo.svg" alt="Worksphere Logo" width="200" />
+  <img src="images/whitelogo.svg" alt="Worksphere Logo" width="200" />
 </p>
 
 # Worksphere
