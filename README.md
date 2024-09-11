@@ -44,7 +44,6 @@ At Worksphere, we aim to create a thriving ecosystem where students can balance 
 
 If you have any questions or would like to collaborate, feel free to reach out:
 
-- **Email**: contact@stabler.fun
 - **Freelancer Profile**: [Worksphere Freelancer](#)
 - **GitHub**: [GitHub Repository](#)
 
