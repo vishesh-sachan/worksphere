@@ -1,9 +1,10 @@
-import Image from "next/image";
+import PostBox from "@/components/postBox";
 
 export default function Home() {
-  return (
+  return (<div>
     <div className="flex justify-center">
       Work Sphere
     </div>
+  </div>
   );
 }
