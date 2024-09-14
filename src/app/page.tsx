@@ -35,7 +35,7 @@ export default function Home() {
         {/* SVG Section */}
         <div className="mt-10">
           <div className="flex">
-            <h2 className="text-2xl font-bold text-black">Made With by </h2>
+            <h2 className="text-2xl font-bold text-black">Made With by-</h2>
             <div className="animate-bounce h-10 w-10">❤️</div>
           </div>
           <svg width="220" height="100" viewBox="0 0 106 16" fill="none" xmlns="http://www.w3.org/2000/svg">
