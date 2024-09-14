@@ -49,7 +49,7 @@ export default function Navbar(){
               <strong>Login</strong>
             </a>
             <a href="#signup" className="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition duration-300">
-              Signup
+             <strong> Signup</strong>
             </a>
           </div>
 
@@ -92,7 +92,9 @@ export default function Navbar(){
               <strong>Login</strong>
             </a>
             <a href="#signup" className="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition duration-300">
-              Signup
+              <strong>Signup
+                
+              </strong>
             </a>
           </div>
         )}
