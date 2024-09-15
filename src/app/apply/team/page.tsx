@@ -42,7 +42,6 @@ export default function ApplyAsTeam() {
             value={teamName}
             onChange={(e) => {
               const value = e.target.value;
-              // Only allow alphabets (no numbers or special characters)
               const regex = /^[A-Za-z\s]*$/;
               
               if (regex.test(value)) {
@@ -69,7 +68,7 @@ export default function ApplyAsTeam() {
                   value={member.name}
                   onChange={(e) => {
                     const value = e.target.value;
-                    const regex = /^[A-Za-z\s]*$/; // Allows only alphabets and spaces
+                    const regex = /^[A-Za-z\s]*$/;
 
                     if (regex.test(value)) {
                       const newMembers = [...teamMembers];
@@ -92,7 +91,7 @@ export default function ApplyAsTeam() {
                   value={member.role}
                   onChange={(e) => {
                     const value = e.target.value;
-                    const regex = /^[A-Za-z\s]*$/; // Allows only alphabets and spaces
+                    const regex = /^[A-Za-z\s]*$/;
 
                     if (regex.test(value)) {
                       const newMembers = [...teamMembers];
