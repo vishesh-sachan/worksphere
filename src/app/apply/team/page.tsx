@@ -40,13 +40,25 @@ export default function ApplyAsTeam() {
           <input
             type="text"
             value={teamName}
-            onChange={(e) => setTeamName(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value;
+              // Only allow alphabets (no numbers or special characters)
+              const regex = /^[A-Za-z\s]*$/;
+              
+              if (regex.test(value)) {
+                setTeamName(value);
+              } else {
+                alert("Please enter alphabets only.");
+              }
+            }}
             className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"
             required
           />
+
         </div>
 
         <h3 className="text-lg font-bold mt-6">Team Members</h3>
+        
         {teamMembers.map((member, index) => (
           <div key={index} className="mb-4">
             <div className="flex space-x-4">
@@ -56,13 +68,21 @@ export default function ApplyAsTeam() {
                   type="text"
                   value={member.name}
                   onChange={(e) => {
-                    const newMembers = [...teamMembers];
-                    newMembers[index].name = e.target.value;
-                    setTeamMembers(newMembers);
+                    const value = e.target.value;
+                    const regex = /^[A-Za-z\s]*$/; // Allows only alphabets and spaces
+
+                    if (regex.test(value)) {
+                      const newMembers = [...teamMembers];
+                      newMembers[index].name = value;
+                      setTeamMembers(newMembers);
+                    } else {
+                      alert("Please enter alphabets only.");
+                    }
                   }}
                   className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"
                   required
                 />
+
               </div>
 
               <div className="flex-1">
@@ -71,13 +91,21 @@ export default function ApplyAsTeam() {
                   type="text"
                   value={member.role}
                   onChange={(e) => {
-                    const newMembers = [...teamMembers];
-                    newMembers[index].role = e.target.value;
-                    setTeamMembers(newMembers);
+                    const value = e.target.value;
+                    const regex = /^[A-Za-z\s]*$/; // Allows only alphabets and spaces
+
+                    if (regex.test(value)) {
+                      const newMembers = [...teamMembers];
+                      newMembers[index].role = value;
+                      setTeamMembers(newMembers);
+                    } else {
+                      alert("Please enter alphabets only for the role.");
+                    }
                   }}
                   className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"
                   required
                 />
+
               </div>
 
               <button

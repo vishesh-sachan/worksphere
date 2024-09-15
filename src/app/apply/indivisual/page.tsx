@@ -31,10 +31,20 @@ export default function ApplyAsIndividual() {
           <input
             type="text"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value;
+              const regex = /^[A-Za-z\s]*$/;
+
+              if (regex.test(value)) {
+                setName(value);
+              } else {
+                alert("Please enter alphabets only.");
+              }
+            }}
             className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"
             required
           />
+
         </div>
 
         <div className="mb-4">
@@ -42,10 +52,20 @@ export default function ApplyAsIndividual() {
           <input
             type="text"
             value={skills}
-            onChange={(e) => setSkills(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value;
+              const regex = /^[A-Za-z\s,]*$/;
+
+              if (regex.test(value)) {
+                setSkills(value);
+              } else {
+                alert("Please enter alphabets, spaces, and commas only.");
+              }
+            }}
             className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"
             required
           />
+
         </div>
 
         <div className="mt-6">

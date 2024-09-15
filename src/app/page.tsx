@@ -27,14 +27,14 @@ export default function Home() {
           About
         </h1>
         <p className="mt-4 text-base md:text-lg text-black">
-          <strong>Welcome to Worksphere, a dedicated platform that empowers students to kickstart their freelancing careers. If you're a student looking to earn some extra money while honing your skills, this is the place for you whre you can collabrate with other freelancer and work as a team together and earbn money together!</strong>
+          <strong>Welcome to Worksphere, a dedicated platform that empowers students to kickstart their freelancing careers. If you're a student looking to earn some extra money while honing your skills, this is the place for you whre you can collabrate with other freelancer and work as a team together and earn money together!</strong>
         </p>
         
     
         
         <div className="mt-10">
           <div className="flex">
-            <h2 className="text-2xl font-bold text-black">Made With by</h2>
+            <h2 className="text-2xl font-bold text-black">Made with</h2>
             <div className="animate-bounce h-21 w-21 pl-5">❤️</div>
           </div>
           <svg width="220" height="100" viewBox="0 0 106 16" fill="none" xmlns="http://www.w3.org/2000/svg">
